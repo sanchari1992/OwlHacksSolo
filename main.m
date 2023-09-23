@@ -77,12 +77,12 @@ end
 
 % Create the incremental plot
 figure(3)
-bar(distinctMonths, counts);
+bar(distinctMonths, counts, 'FaceColor',[.5 0 .5],'EdgeColor',[.9 0 .9],'LineWidth',1.5);
 xlabel('Distinct Months');
 ylabel('Count');
 title('Count of Rows for Distinct Months');
 
-% Number of Times a specific time was committed
+% Number of Times a specific crime was committed
 distinctCrimes = unique(templeCrime.Text_General_Code);
 counts = zeros(size(distinctCrimes));
 
@@ -92,7 +92,7 @@ end
 
 % Create the incremental plot
 figure(4)
-bar(counts);
+bar(counts, 'FaceColor',[.5 .5 0],'EdgeColor',[.9 .9 0],'LineWidth',1.5);
 xticks(1:numel(distinctCrimes));
 xticklabels(distinctCrimes);
 xlabel('Distinct Crimes');
@@ -110,7 +110,7 @@ top5Values = distinctCrimes(sortedIndices(1:5));
 
 % Create a bar plot for the top 5 counts
 figure(5)
-bar(top5Counts);
+bar(top5Counts, 'FaceColor',[.5 .5 0],'EdgeColor',[.9 .9 0],'LineWidth',1.5);
 xticks(1:5);
 xticklabels(top5Values);
 xlabel('Distinct Crimes (Top 5)');
