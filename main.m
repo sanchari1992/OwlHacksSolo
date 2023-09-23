@@ -54,9 +54,13 @@ for i = 1:numel(distinctYears)
     counts(i) = sum(templeCrime.Year == distinctYears(i));
 end
 
-% Create the incremental plot
+% Create the plot
 figure(2)
-bar(distinctYears, counts);
+
+% Create the bar plot with custom pastel colors
+bar(distinctYears, counts, 'FaceColor',[0 .5 .5],'EdgeColor',[0 .9 .9],'LineWidth',1.5);
+
+
 xlabel('Distinct Years');
 ylabel('Count');
 title('Count of Rows for Distinct Years');
@@ -129,3 +133,7 @@ ax = geoaxes;
 % Plot the filtered locations on the map
 geoplot(ax, filteredData.Lat, filteredData.Lon, 'bo', 'MarkerSize', 8);
 title(['Locations with ' specificCrimeType]);
+
+% In Conclusion
+lovePhilly = imread("Credit-City-of-Philadelphia.jpeg");
+imshow(lovePhilly)
