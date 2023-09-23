@@ -32,6 +32,8 @@ The most prominent challenge I encountered revolved around the availability of l
 
 ## Accomplishments that I'm proud of
 
+Participating in my inaugural hackathon, I come from a non-software background with coursework rooted in networks and protocols. Venturing into the realm of data mining presented a personal challenge, yet a rewarding one. Overcoming uncertainties and diving into implementing data mining and visualizations with MATLAB felt like a significant achievement. Throughout the past 24 hours, I tackled challenges, both major and minor, through self-guided learning. This project and hackathon experience have unveiled my strengths in core programming, an uncharted territory until now. Witnessing my program successfully execute its intended tasks fills me with pride. Knowing it has the potential to greatly benefit my neighborhood and extend its impact to other communities amplifies this sense of accomplishment.
+
 ## What I learned
 
 ## What's next for Philly CrimeScape: A MATLAB Story
