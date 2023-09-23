@@ -36,5 +36,7 @@ Participating in my inaugural hackathon, I come from a non-software background w
 
 ## What I learned
 
+This hackathon has been a profound learning experience for me. It has illuminated the fact that we possess the ability to devise solutions for the issues that surround us, regardless of their scale. I've come to understand that the true potential of someone or something remains hidden until given an opportunity to shine. I've gained insights into the importance of crafting a well-thought-out plan, diligently following it, while remaining open to adjustments when unexpected challenges arise. My unwavering commitment to addressing the core problem and contributing to societal betterment has been reinforced. Above all, I've discovered a deep affection for Philadelphia and a profound willingness to actively engage in addressing its challenges, even if it means making a modest yet meaningful impact.
+
 ## What's next for Philly CrimeScape: A MATLAB Story
 
