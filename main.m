@@ -76,7 +76,6 @@ xlabel('Distinct Years');
 ylabel('Count');
 title('Count of Rows for Distinct Years');
 
-
 % Create a plot by month to figure out if there is any trend throughout the
 % year of change of crime rate
 distinctMonths = unique(templeCrime.Month);
