@@ -12,6 +12,11 @@ Unlock hidden insights into Philadelphia's crime data with MATLAB! My project sh
 
 3. Run the Matlab program main.m on Matlab.
 
+## Execution Time of Program
+
+- Time to read full csv file to table of **1,360,635** records: **26.83 seconds**
+- Time to execute the rest of the MATLAB program: **5.49 seconds**
+
 ## Inspiration
 
 
