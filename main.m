@@ -1,4 +1,15 @@
+% Timer to read full csv file to table of 1,360,635 records
+tic
+
+% Read csv file to table
 phillyCrime = readtable('phillyCrime.csv');
+
+% Stop the timer and display the elapsed time
+elapsed_time = toc;
+fprintf('Time to read full csv file to table of 1,360,635 records: %.2f seconds\n', elapsed_time);
+
+% Timer to find out the rest of the time the program takes
+tic
 
 % Use "disp(phillyCrime)" anywhere you wish to look at full current data
 % Use "disp(head(phillyCrime))" anywhere you wish to look at first few rows of current data
@@ -7,7 +18,7 @@ phillyCrime = readtable('phillyCrime.csv');
 phillyCrime=phillyCrime(~any(ismissing(phillyCrime),2),:);
 % Drop unwanted columns
 phillyCrime=phillyCrime(:,[1 4 5 7 8 9 10 11 13 14]);
-disp(head(phillyCrime))
+%disp(head(phillyCrime))
 
 % Changing value to integer for dc_dist
 phillyCrime.Police_Districts = int8(phillyCrime.Police_Districts);
@@ -16,7 +27,7 @@ phillyCrime.Dispatch_Date.Format = 'uuuu.MM.dd HH:mm:ss';
 phillyCrime.Dispatch_Time = phillyCrime.Dispatch_Date + phillyCrime.Dispatch_Time;
 % Sorting the rows by date time
 phillyCrime = sortrows(phillyCrime,'Dispatch_Time');
-disp(head(phillyCrime))
+%disp(head(phillyCrime))
 
 % Extract Months and Years to separate columns in table to plot
 phillyCrime.Year = year(phillyCrime.Dispatch_Date);
@@ -137,3 +148,7 @@ title(['Locations with ' specificCrimeType]);
 % In Conclusion
 lovePhilly = imread("Credit-City-of-Philadelphia.jpeg");
 imshow(lovePhilly)
+
+% Stop the timer and display the elapsed time
+elapsed_time = toc;
+fprintf('Time to execute the rest of the MATLAB program: %.2f seconds\n', elapsed_time);
