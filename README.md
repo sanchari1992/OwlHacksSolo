@@ -19,6 +19,8 @@ As for my choice of MATLAB, it's a tool I first encountered in 2010, and though 
 
 ## What it does
 
+My project addresses the concerning surge in crime rates in Philadelphia, a particularly pertinent issue for Temple University students who regularly receive safety alerts. To effectively combat this rising trend, comprehensive information is crucial. Recognizing that visuals convey information more effectively, my project takes a comprehensive dataset of Philadelphia crime activities, applies rigorous data cleaning techniques to refine and prepare the data, and subsequently employs MATLAB as the primary tool for insightful data visualization. The aim is not only to present crucial information but also to demonstrate the formidable capabilities of MATLAB, extending its prowess beyond traditional statistical operations. This project offers a compelling narrative by showcasing how MATLAB can be a powerful and versatile choice for data analysis and visualization, particularly in a domain dominated by other tools like Pandas in Python.
+
 ## How we built it
 
 ## Challenges we ran into
