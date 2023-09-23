@@ -6,9 +6,11 @@ Unlock hidden insights into Philadelphia's crime data with MATLAB! My project sh
 
 ## Steps to Run
 
-1. Unzip the file phillyCrime.csv.zip to get the csv file phillyCrime.csv in the same folder location as the rest of the repo.
+1. Download the repository on your local system.
 
-2. Run the Matlab program main.m on Matlab.
+2. Unzip the file phillyCrime.csv.zip to get the csv file phillyCrime.csv in the same folder location as the rest of the repo.
+
+3. Run the Matlab program main.m on Matlab.
 
 ## Inspiration
 
@@ -40,3 +42,8 @@ This hackathon has been a profound learning experience for me. It has illuminate
 
 ## What's next for Philly CrimeScape: A MATLAB Story
 
+The next phases of **"Philly CrimeScape: A Matlab Story"** involve a dual approach:
+
+1. Predictive Analysis: My goal is to delve into predictive analysis for future crime occurrences within a specific region. This will be based on trends observed in that region during past months.
+
+2. Scaling Beyond Philly: Additionally, I aspire to extend this algorithm's application to other cities across the nation, contributing to a broader understanding of crime patterns and trends.
