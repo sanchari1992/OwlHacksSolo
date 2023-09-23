@@ -26,11 +26,13 @@ My project addresses the concerning surge in crime rates in Philadelphia, a part
 Back in 2010, I had my first taste of MATLAB during a single semester, leaving a lasting impression of its remarkable versatility. Since then, I've eagerly awaited an opportunity to revisit it. For this project, I scoured numerous datasets until I uncovered the ideal gem within Open Data Philly's public safety information datasets—an extensive Crime Incidents dataset comprising 1,360,635 records. Leveraging MATLAB, I meticulously performed comprehensive data cleansing and preprocessing. In contrast to the more widespread use of Pandas, MATLAB's commands, in my eyes, offer enhanced readability and structured workflows. I then embarked on a journey of visualization, dissecting crime rates by year, exploring monthly trends, and categorizing crime activities. Furthermore, I charted some of the most crime-prone locations onto a geo-map for added context. Looking forward, given more time, my ambitions extend to the realm of predictive analytics, where linear regression models (or other fitting methodologies) could foresee future crime rate escalations in the absence of proactive measures.
 
 
-## Challenges we ran into
+## Challenges I ran into
 
-## Accomplishments that we're proud of
+The most prominent challenge I encountered revolved around the availability of learning resources. While there's a wealth of reference materials for data mining with Python, MATLAB lacks a similarly abundant set of resources in specific data mining areas. Consequently, I had to embark on the exhilarating yet demanding journey of coding the entire project from the ground up. At times, I yearned for a collaborative brainstorming partner and an extra set of eyes, but the lack of available team members left me to tackle the project solo. As a first-time hackathon participant, I would have preferred the support of a team. From a technical perspective, I also grappled with GitHub's file size limitations, which necessitated compressing my dataset for users to unzip—whereas I would have preferred a more seamless "plug-and-play" approach.
 
-## What we learned
+## Accomplishments that I'm proud of
+
+## What I learned
 
 ## What's next for Philly CrimeScape: A MATLAB Story
 
