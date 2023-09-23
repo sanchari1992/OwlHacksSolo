@@ -8,9 +8,9 @@ phillyCrime=phillyCrime(~any(ismissing(phillyCrime),2),:);
 % Drop unwanted columns
 phillyCrime=phillyCrime(:,[1 4 5 7 8 9 10 11 13 14]);
 disp(head(phillyCrime))
-variableNames = phillyCrime.Properties.VariableNames;
+
 % Changing value to integer for dc_dist
-phillyCrime.(variableNames{1}) = int8(phillyCrime.(variableNames{1}));
+phillyCrime.Police_Districts = int8(phillyCrime.Police_Districts);
 % Adding datetime columns for later calculation
 phillyCrime.Dispatch_Date.Format = 'uuuu.MM.dd HH:mm:ss';
 phillyCrime.Dispatch_Time = phillyCrime.Dispatch_Date + phillyCrime.Dispatch_Time;
@@ -30,7 +30,7 @@ phillyCrime = phillyCrime(phillyCrime.Year ~= 2017, :);
 % Let's create a map of the district locations from the table
 
 % Create a geographic axes
-figure;
+figure(1)
 ax = geoaxes;
 
 % Plot the latitude and longitude data on the map
@@ -55,6 +55,7 @@ for i = 1:numel(distinctYears)
 end
 
 % Create the incremental plot
+figure(2)
 bar(distinctYears, counts);
 xlabel('Distinct Years');
 ylabel('Count');
@@ -71,6 +72,7 @@ for i = 1:numel(distinctMonths)
 end
 
 % Create the incremental plot
+figure(3)
 bar(distinctMonths, counts);
 xlabel('Distinct Months');
 ylabel('Count');
@@ -85,6 +87,7 @@ for i = 1:numel(distinctCrimes)
 end
 
 % Create the incremental plot
+figure(4)
 bar(counts);
 xticks(1:numel(distinctCrimes));
 xticklabels(distinctCrimes);
@@ -102,6 +105,7 @@ top5Counts = sortedCounts(1:5);
 top5Values = distinctCrimes(sortedIndices(1:5));
 
 % Create a bar plot for the top 5 counts
+figure(5)
 bar(top5Counts);
 xticks(1:5);
 xticklabels(top5Values);
@@ -119,7 +123,7 @@ specificCrimeType = 'Thefts';
 filteredData = phillyCrime(strcmp(phillyCrime.Text_General_Code, specificCrimeType), :);
 
 % Create a geographic map
-figure;
+figure(6)
 ax = geoaxes;
 
 % Plot the filtered locations on the map
