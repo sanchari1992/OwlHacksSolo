@@ -10,7 +10,7 @@ Unlock hidden insights into Philadelphia's crime data with MATLAB! My project sh
 
 2. Unzip the file phillyLatestCrime.csv.zip to get the csv file phillyCrime.csv in the same folder location as the rest of the repo.
 
-3. Run the Matlab program main.m on Matlab.
+3. Run the Matlab program PhillyCrime.m on Matlab.
 
 ## Execution Time of Program
 
