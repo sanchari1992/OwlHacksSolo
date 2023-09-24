@@ -46,7 +46,7 @@ ax = geoaxes;
 
 % Plot the latitude and longitude data on the map
 geoscatter(ax, phillyCrime.Lat, phillyCrime.Lon, 'r', 'filled'); % 'r' for red markers
-title('Latitude and Longitude Plot');
+title('Plot of crimes in Philadelphia based on Latitudes and Longitudes');
 
 % We see that this basically covers Philadelphia extensively.
 
@@ -73,8 +73,8 @@ bar(distinctYears, counts, 'FaceColor',[0 .5 .5],'EdgeColor',[0 .9 .9],'LineWidt
 
 
 xlabel('Distinct Years');
-ylabel('Count');
-title('Count of Rows for Distinct Years');
+ylabel('Crime Count');
+title('Crime Statistics in Philadelphia by Distinct Years');
 
 % Create a plot by month to figure out if there is any trend throughout the
 % year of change of crime rate
@@ -89,8 +89,8 @@ end
 figure(3)
 bar(distinctMonths, counts, 'FaceColor',[.5 0 .5],'EdgeColor',[.9 0 .9],'LineWidth',1.5);
 xlabel('Distinct Months');
-ylabel('Count');
-title('Count of Rows for Distinct Months');
+ylabel('CrimeCount');
+title('Crime Statistics in Philadelphia by Distinct Months');
 
 % Number of Times a specific crime was committed
 distinctCrimes = unique(templeCrime.Text_General_Code);
@@ -106,8 +106,8 @@ bar(counts, 'FaceColor',[.5 .5 0],'EdgeColor',[.9 .9 0],'LineWidth',1.5);
 xticks(1:numel(distinctCrimes));
 xticklabels(distinctCrimes);
 xlabel('Distinct Crimes');
-ylabel('Count');
-title('Count of Rows for Distinct Crimes');
+ylabel('CrimeCount');
+title('Crime Statistics in Philadelphia by Types of Crime');
 
 % It will also be very informational to plot the top 5 crimes
 
@@ -124,8 +124,8 @@ bar(top5Counts, 'FaceColor',[.5 .5 0],'EdgeColor',[.9 .9 0],'LineWidth',1.5);
 xticks(1:5);
 xticklabels(top5Values);
 xlabel('Distinct Crimes (Top 5)');
-ylabel('Count');
-title('Top 5 Counts of Rows for Distinct Crimes');
+ylabel('Crime Count');
+title('Crime Statistics in Philadelphia by 5 Most Occurring Types of Crime');
 
 
 % Now, we try to pinpoint areas with specific type of crimes
@@ -142,7 +142,7 @@ ax = geoaxes;
 
 % Plot the filtered locations on the map
 geoplot(ax, filteredData.Lat, filteredData.Lon, 'bo', 'MarkerSize', 8);
-title(['Locations with ' specificCrimeType]);
+title(['Locations with Crime Type - ' specificCrimeType]);
 
 % In Conclusion
 lovePhilly = imread("Credit-City-of-Philadelphia.jpeg");
