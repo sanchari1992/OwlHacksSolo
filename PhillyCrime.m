@@ -1,4 +1,4 @@
-% Timer to read full csv file to table of 1,360,635 records
+% Timer to read full csv file to table of 456,683 records
 tic
 
 % Read csv file to table

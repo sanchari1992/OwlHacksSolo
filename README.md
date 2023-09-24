@@ -8,14 +8,14 @@ Unlock hidden insights into Philadelphia's crime data with MATLAB! My project sh
 
 1. Download the repository on your local system.
 
-2. Unzip the file phillyCrime.csv.zip to get the csv file phillyCrime.csv in the same folder location as the rest of the repo.
+2. Unzip the file phillyLatestCrime.csv.zip to get the csv file phillyCrime.csv in the same folder location as the rest of the repo.
 
 3. Run the Matlab program main.m on Matlab.
 
 ## Execution Time of Program
 
-- Time to read full csv file to table of **1,360,635** records: **26.83 seconds**
-- Time to execute the rest of the MATLAB program: **5.49 seconds**
+- Time to read full csv file to table of **1,360,635** records: **3.94 seconds**
+- Time to execute the rest of the MATLAB program: **4.42 seconds**
 
 ## Inspiration
 
