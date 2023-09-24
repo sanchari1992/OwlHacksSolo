@@ -6,7 +6,7 @@ phillyCrime = readtable('PhillyLatestCrime.csv');
 
 % Stop the timer and display the elapsed time
 elapsed_time = toc;
-fprintf('Time to read full csv file to table of 1,360,635 records: %.2f seconds\n', elapsed_time);
+fprintf('Time to read full csv file to table of 456,683 records: %.2f seconds\n', elapsed_time);
 
 % Timer to find out the rest of the time the program takes
 tic
